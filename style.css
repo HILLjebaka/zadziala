@@ -1,0 +1,30 @@
+body {
+    background-image: url('giphy.gif'); /* Używamy nazwy pliku 'giphy.gif' jako tła */
+    background-size: 30%; /* Zmniejszamy rozmiar tła do 30% oryginalnego */
+    background-repeat: repeat; /* Powtarzamy obrazek tła */
+    font-family: Arial, sans-serif;
+    color: #333; /* Dodajemy domyślny kolor tekstu */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Dodajemy nieprzezroczyste tło dla laurki */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.card p {
+    margin-bottom: 10px; /* Dodajemy odstęp między akapitami */
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none; /* Usuwamy domyślne podkreślenie dla linku */
+}
+
+.button img {
+    max-width: 10%; /* Ustawiamy maksymalną szerokość obrazka na 100% szerokości przycisku */
+    height: auto; /* Zachowaj proporcje obrazka */
+}
