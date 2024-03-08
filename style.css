@@ -20,11 +20,24 @@ body {
 }
 
 .button {
-    display: inline-block;
-    text-decoration: none; /* Usuwamy domyślne podkreślenie dla linku */
+    background-color: #4CAF50; /* Kolor tła przycisku */
+    color: white; /* Kolor tekstu na przycisku */
+    padding: 10px 20px; /* Wielkość wewnętrznych marginesów przycisku */
+    border: none; /* Usuń obramowanie przycisku */
+    border-radius: 5px; /* Zaokrąglony narożnik przycisku */
+    cursor: pointer; /* Zmień kursor na wskaźnik podczas najechania */
 }
 
-.button img {
-    max-width: 10%; /* Ustawiamy maksymalną szerokość obrazka na 100% szerokości przycisku */
-    height: auto; /* Zachowaj proporcje obrazka */
+.button:hover {
+    background-color: #45a049; /* Zmiana koloru tła na najechanie myszą */
+}
+
+.ball {
+    animation: bounce 2s infinite; /* Użyj animacji bounce na piłce */
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
 }
